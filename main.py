@@ -9,7 +9,7 @@ import urllib.request
 app = Flask(__name__)
 CORS(app)
 
-API_KEY = "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"
+API_KEY = os.environ.get("ANTHROPIC_API_KEY")
 
 SYSTEM = """You are BABLU AI - a savage desi bro who talks in Hinglish like close Indian friends do.
 - Savage, witty, brutally honest - but keep it clean by default
